@@ -8,8 +8,8 @@
     <title>Area</title>
 </head>
 <body>
-    <nav class="navigation container">
-        <div class="nav-brand"></div>
+    <nav class="navigation glassmorphism">
+        <div class="nav-brand">Triangle</div>
         <ul class="list-non-bullet nav-pills">
             <li class="list-item-inline">
                 <a class="link link-active" href="/">Area</a>
@@ -26,17 +26,25 @@
         </ul>
     </nav>
   
-    <h1>Check the area of a Triangle</h1>
-    <label for="base">
-        Base(in cm):
-    </label>
-    <input type="number" name="base" id="baseInput">
-    <label for="height">
-        Height(in cm):
-    </label>
-    <input type="number" name="height" id="heightInput">
-    <button id="area-btn">Check Area</button>
-    <h2 id="output"></h2>
+    <div class="center-ContainerParent">
+
+    <div class="centerContainer-Children  glassmorphism">
+        <h1>Check the area of a Triangle</h1>
+        <label for="base">
+            Base(in cm):
+        </label>
+        <input type="number" name="base" id="baseInput">
+        <br>
+        <label for="height">
+            Height(in cm):
+        </label>
+        <input type="number" name="height" id="heightInput">
+     <br>
+        <button id="area-btn">Check Area</button>
+        <h2 id="output"></h2>
+     </div>
+    
+</div>
     <script src="./Script/area.js"></script>
 </body>
 </html>

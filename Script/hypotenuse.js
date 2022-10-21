@@ -1,14 +1,12 @@
-const sideInputs=document.querySelectorAll(".side-input");
+const sideInputone=document.querySelector(".side-inputone");
+const sideInputtwo=document.querySelector(".side-inputtwo");
 const hypotenuseBtn=document.querySelector("#hypotenuse-btn");
 const outputEl=document.querySelector("#output");
 
 function calculateHypotenuse(){
-    const a=parseInt(sideInputs[0].value)
-    const b=parseInt(sideInputs[1].value)
-    const sumOfSquares=a*a+b*b;
-    const lengthOfHypotenuse=Math.sqrt(sumOfSquares);
+    const lengthOfHypotenuse= Math.sqrt((sideInputone.value*sideInputone.value)+(sideInputtwo.value*sideInputtwo.value));
+     console.log(lengthOfHypotenuse);
     outputEl.innerText="The length of hypotenuse: "+lengthOfHypotenuse;
 
 }
-
-hypotenuseBtn.addEventListener("click",calculateHypotenuse);
+hypotenuseBtn.addEventListener('click' , calculateHypotenuse )
